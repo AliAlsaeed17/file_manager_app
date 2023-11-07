@@ -23,15 +23,21 @@ class _FileScreenState extends State<FileScreen> {
         elevation: 0,
         backgroundColor: Colors.transparent,
         centerTitle: true,
-        title: Text('Google Course'),
-        leading: Icon(
-          Icons.arrow_back_ios_new,
+        title: const Text('Google Course'),
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            Icons.arrow_back_ios_new,
+          ),
         ),
         actions: [
-          Icon(
-            Icons.menu,
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.menu,
+            ),
           ),
-          HorizontalSizedBox(15)
+          const HorizontalSizedBox(15)
         ],
       ),
       body: Stack(
@@ -49,21 +55,21 @@ class _FileScreenState extends State<FileScreen> {
           Positioned.fill(
             top: MediaQuery.of(context).size.height * .13,
             child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 30),
+              padding: const EdgeInsets.symmetric(horizontal: 30),
               child: Column(
                 children: [
-                  FileLocationChoiceBox(),
+                  const FileLocationChoiceBox(),
                   const VerticalSizedBox(20),
-                  FileSizeBox(),
+                  const FileSizeBox(),
                   const VerticalSizedBox(20),
                   Expanded(
                     child: ListView.separated(
                       padding: EdgeInsets.zero,
                       itemBuilder: (context, index) {
-                        return FileDetailsItem();
+                        return const FileDetailsItem();
                       },
                       separatorBuilder: (context, index) =>
-                          VerticalSizedBox(10),
+                          const VerticalSizedBox(10),
                       itemCount: 10,
                     ),
                   ),

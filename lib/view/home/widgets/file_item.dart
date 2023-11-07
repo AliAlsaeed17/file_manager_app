@@ -21,7 +21,7 @@ class FileItem extends StatelessWidget {
               color: Colors.grey.withOpacity(0.2),
               spreadRadius: 5,
               blurRadius: 10,
-              offset: Offset(0, 5),
+              offset: const Offset(0, 5),
             ),
           ],
         ),
@@ -37,19 +37,14 @@ class FileItem extends StatelessWidget {
                 children: [
                   Text(
                     'Google UX Course',
-                    style: TextStyle(
-                      color: AppColors.darkBlue,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
+                    style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                          color: AppColors.darkBlue,
+                        ),
                   ),
-                  VerticalSizedBox(5),
+                  const VerticalSizedBox(5),
                   Text(
                     'Uploaded on 28 April',
-                    style: TextStyle(
-                      color: AppColors.darkBlue.withOpacity(0.4),
-                      fontSize: 15,
-                    ),
+                    style: Theme.of(context).textTheme.bodyMedium!,
                   ),
                 ],
               ),

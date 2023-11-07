@@ -11,7 +11,7 @@ class FileDetailsItem extends StatelessWidget {
     return InkWell(
       onTap: () {},
       child: Container(
-        padding: EdgeInsets.all(15),
+        padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           color: AppColors.white,
           borderRadius: BorderRadius.circular(15),
@@ -20,7 +20,7 @@ class FileDetailsItem extends StatelessWidget {
               color: Colors.grey.withOpacity(0.2),
               spreadRadius: 5,
               blurRadius: 10,
-              offset: Offset(0, 5),
+              offset: const Offset(0, 5),
             ),
           ],
         ),
@@ -28,19 +28,19 @@ class FileDetailsItem extends StatelessWidget {
           children: [
             Expanded(
               child: Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   color: AppColors.pink,
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: Icon(
+                child: const Icon(
                   Icons.video_camera_back,
                   color: AppColors.white,
                   size: 35,
                 ),
               ),
             ),
-            HorizontalSizedBox(15),
+            const HorizontalSizedBox(15),
             Expanded(
               flex: 3,
               child: Column(
@@ -48,19 +48,14 @@ class FileDetailsItem extends StatelessWidget {
                 children: [
                   Text(
                     'New Video Shot',
-                    style: TextStyle(
-                      color: AppColors.darkBlue,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
+                    style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                          color: AppColors.darkBlue,
+                        ),
                   ),
-                  VerticalSizedBox(5),
+                  const VerticalSizedBox(5),
                   Text(
                     '168 video - 3.6 GB',
-                    style: TextStyle(
-                      color: AppColors.darkBlue.withOpacity(0.4),
-                      fontSize: 15,
-                    ),
+                    style: Theme.of(context).textTheme.bodyMedium,
                   ),
                 ],
               ),

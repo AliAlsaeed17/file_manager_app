@@ -1,3 +1,4 @@
+import 'package:file_manager_app/core/constants/app_theme.dart';
 import 'package:file_manager_app/core/router/app_router.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      //theme: AppTheme.themeArabic,
+      theme: AppTheme.themeArabic,
       locale: const Locale('ar'),
       onGenerateRoute: AppRouter.generateRoute,
     );
