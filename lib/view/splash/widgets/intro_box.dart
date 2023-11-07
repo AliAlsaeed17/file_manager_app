@@ -1,5 +1,6 @@
 import 'package:file_manager_app/core/class/custom_clip_path.dart';
 import 'package:file_manager_app/core/constants/app_colors.dart';
+import 'package:file_manager_app/core/constants/app_sizes.dart';
 import 'package:flutter/material.dart';
 
 class IntroBox extends StatelessWidget {
@@ -13,7 +14,7 @@ class IntroBox extends StatelessWidget {
         padding: const EdgeInsets.all(30),
         decoration: BoxDecoration(
           color: AppColors.white,
-          borderRadius: BorderRadius.circular(25),
+          borderRadius: AppSizes.radius25,
         ),
         child: Column(
           children: [

@@ -1,4 +1,5 @@
 import 'package:file_manager_app/core/constants/app_colors.dart';
+import 'package:file_manager_app/core/constants/app_sizes.dart';
 import 'package:file_manager_app/view/shared/app_button.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class FileLocationChoiceBox extends StatelessWidget {
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: AppColors.white,
-        borderRadius: BorderRadius.circular(40),
+        borderRadius: AppSizes.radius40,
       ),
       child: Row(
         children: [

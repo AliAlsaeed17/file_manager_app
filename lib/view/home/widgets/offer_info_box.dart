@@ -1,4 +1,5 @@
 import 'package:file_manager_app/core/constants/app_colors.dart';
+import 'package:file_manager_app/core/constants/app_sizes.dart';
 import 'package:flutter/material.dart';
 
 class OfferInfoBox extends StatelessWidget {
@@ -11,7 +12,7 @@ class OfferInfoBox extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: AppColors.violet,
-        borderRadius: BorderRadius.circular(30),
+        borderRadius: AppSizes.radius30,
         boxShadow: [
           BoxShadow(
             color: AppColors.violet.withOpacity(0.8),
@@ -67,7 +68,7 @@ class OfferInfoBox extends StatelessWidget {
                       padding: const EdgeInsets.symmetric(horizontal: 25),
                       backgroundColor: AppColors.orange,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: AppSizes.radius20,
                       ),
                     ),
                     onPressed: () {},

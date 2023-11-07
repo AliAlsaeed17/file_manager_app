@@ -1,4 +1,5 @@
 import 'package:file_manager_app/core/constants/app_colors.dart';
+import 'package:file_manager_app/core/constants/app_sizes.dart';
 import 'package:file_manager_app/view/shared/sized_boxes/vertical_sized_box.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class FileSizeBox extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: AppColors.white,
-        borderRadius: BorderRadius.circular(15),
+        borderRadius: AppSizes.radius15,
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.2),
@@ -50,7 +51,7 @@ class FileSizeBox extends StatelessWidget {
           Container(
             height: 17,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: AppSizes.radius10,
               gradient: const LinearGradient(
                 colors: [
                   Colors.redAccent,

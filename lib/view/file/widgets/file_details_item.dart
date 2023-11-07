@@ -1,4 +1,5 @@
 import 'package:file_manager_app/core/constants/app_colors.dart';
+import 'package:file_manager_app/core/constants/app_sizes.dart';
 import 'package:file_manager_app/view/shared/sized_boxes/horizontal_sized_box.dart';
 import 'package:file_manager_app/view/shared/sized_boxes/vertical_sized_box.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +15,7 @@ class FileDetailsItem extends StatelessWidget {
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
           color: AppColors.white,
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: AppSizes.radius15,
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.2),
@@ -31,7 +32,7 @@ class FileDetailsItem extends StatelessWidget {
                 padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   color: AppColors.pink,
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: AppSizes.radius20,
                 ),
                 child: const Icon(
                   Icons.video_camera_back,

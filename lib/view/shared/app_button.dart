@@ -1,4 +1,5 @@
 import 'package:file_manager_app/core/constants/app_colors.dart';
+import 'package:file_manager_app/core/constants/app_sizes.dart';
 import 'package:flutter/material.dart';
 
 class AppButton extends StatelessWidget {
@@ -21,7 +22,7 @@ class AppButton extends StatelessWidget {
         backgroundColor: backgroundColor,
         elevation: 0,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(30),
+          borderRadius: AppSizes.radius30,
         ),
       ),
       onPressed: () {},

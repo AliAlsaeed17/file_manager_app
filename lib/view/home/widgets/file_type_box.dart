@@ -1,4 +1,5 @@
 import 'package:file_manager_app/core/constants/app_colors.dart';
+import 'package:file_manager_app/core/constants/app_sizes.dart';
 import 'package:file_manager_app/view/shared/sized_boxes/vertical_sized_box.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +25,7 @@ class FileTypeBox extends StatelessWidget {
             padding: const EdgeInsets.all(15),
             decoration: BoxDecoration(
               color: backgroundColor,
-              borderRadius: BorderRadius.circular(18),
+              borderRadius: AppSizes.radius20,
             ),
             child: Icon(
               icon,

@@ -1,5 +1,6 @@
 import 'package:file_manager_app/core/constants/app_colors.dart';
 import 'package:file_manager_app/core/constants/app_routes.dart';
+import 'package:file_manager_app/core/constants/app_sizes.dart';
 import 'package:file_manager_app/view/shared/sized_boxes/vertical_sized_box.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +16,7 @@ class FileItem extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: AppColors.white,
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: AppSizes.radius15,
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.2),
